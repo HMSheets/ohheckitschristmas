@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>heckin christmas countdown!</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Oleo+Script:400,700');
+    #clock1 {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Oleo Script', cursive;;
+        font-size: 100px;
+        color: white;
+        text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000,
+        2px 2px 200px #fff,
+        2px 2px 200px #ccc;
+        
+    }
+    body {
+        background-image: url('images/chitoge_christmas_pattern.png');
+      }
+</style>
+<body>
+    <h2>
+        
+        <div id="clock1">[clock1]</div>
+        
+    </h2>
+</body>
+
+
+<!-- Countdown Script Start -->
+<script language="JavaScript">
+//Script By Mistonline.in
+//Edit the below date value [MM/DD/YY] and TIME according to your convinience.
+  StartCountDown("clock1","12/25/2018 00:00 AM")
+function StartCountDown(myDiv,myTargetDate)
+  {
+    var dthen   = new Date(myTargetDate);
+    var dnow    = new Date();
+    ddiff       = new Date(dthen-dnow);
+    gsecs       = Math.floor(ddiff.valueOf()/1000);
+    CountBack(myDiv,gsecs);
+  }
+   
+  function Calcage(secs, num1, num2)
+  {
+    s = ((Math.floor(secs/num1))%num2).toString();
+    if (s.length < 2) 
+    {   
+      s = "0" + s;
+    }
+    return (s);
+  }
+   
+  function CountBack(myDiv, secs)
+  {
+    var DisplayStr;
+    var DisplayFormat = "%%D%% Days %%H%%:%%M%%:%%S%%";
+    DisplayStr = DisplayFormat.replace(/%%D%%/g,    Calcage(secs,86400,100000));
+    DisplayStr = DisplayStr.replace(/%%H%%/g,       Calcage(secs,3600,24));
+    DisplayStr = DisplayStr.replace(/%%M%%/g,       Calcage(secs,60,60));
+    DisplayStr = DisplayStr.replace(/%%S%%/g,       Calcage(secs,1,60));
+    if(secs > 0)
+    {   
+      document.getElementById(myDiv).innerHTML = DisplayStr;
+      setTimeout("CountBack('" + myDiv + "'," + (secs-1) + ");", 990);
+    }
+    else
+    {
+      document.getElementById(myDiv).innerHTML = "oh heck its christmas!";
+    }
+  }
+ </script>
+ <!-- Countdown Script End -->
+</html>
