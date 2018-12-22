@@ -1,7 +1,3 @@
-function sayHello() {
-  alert("Hello World")
-}
-
 function StartCountDown(myDiv, myTargetDate) {
   var dthen = new Date(myTargetDate);
   var dnow = new Date();
