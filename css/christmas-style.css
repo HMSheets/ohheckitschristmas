@@ -2,41 +2,11 @@
 /* font-family: 'Oleo Script', cursive; */
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 /* font-family: 'Pacifico', cursive; */
-a:link {
-    text-decoration: none;
-}
-a:visited   {
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: none;
-}
-a:active {
-    text-decoration: none;
-}
 .wrapper {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: stretch;
-    align-items: stretch;
-    /*width: 99vw;
-    height: 98vh;*/
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), transparent, transparent, rgba(255, 255, 255, 0.4));
 }
-/*.wrapper > div{
-    background:#eee;
-    padding:1em;
-}*/
 .top-div {
-    height: auto;
-    text-align: center;
     font-family: 'Pacifico', cursive;
-    font-size: 3vw;
     color: white;
     text-shadow:
         -2px -2px 0 #000,
@@ -45,21 +15,9 @@ a:active {
         2px 2px 0 #000,
         2px 2px 200px #fff,
         2px 2px 200px #ccc;
-}
-.content-div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: stretch;
-    align-items: stretch;
-}
-.content-div>div {
-    /*background: #ddd;*/
-    padding: 1em;
 }
 .countdown-div {
-    margin: auto auto;
     font-family: 'Oleo Script', cursive;
-    font-size: 4.8vw;
     color: white;
     text-shadow:
         -2px -2px 0 #000,
@@ -69,28 +27,9 @@ a:active {
         2px 2px 200px #fff,
         2px 2px 200px #ccc;
 }
-.image-div {
-    text-align: center;
-}
-.main-image {
-max-width: 50%;
-}
 .footer-div {
-    display: flex;
-    height: auto;
-    text-align: center;
     font-family: 'Pacifico', cursive;
-    font-size: 1vw;
     color: black;
-    /*background: #ddd;
-    position: absolute;
-    bottom: 0;*/
     justify-content: center;
     align-items: flex-end;
-    text-shadow:
-        1px 1px 50px #fff,
-        1px 1px 50px #fff;
-}
-body {
-    background-image: url('../images/oh_heck_paper.png');
 }
