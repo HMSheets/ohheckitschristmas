@@ -33,3 +33,6 @@
     justify-content: center;
     align-items: flex-end;
 }
+body {
+    background-image: url('../images/oh_heck_paper.png');
+}
