@@ -45,6 +45,6 @@ function CountBack(myDiv, secs) {
     setTimeout("CountBack('" + myDiv + "'," + (secs - 1) + ");", 990);
   }
   else {
-    document.getElementById(myDiv).innerHTML = "oh heck its christmas!";
+    document.getElementById(myDiv).innerHTML = "happy new year!";
   }
 }
