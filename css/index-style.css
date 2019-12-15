@@ -40,7 +40,7 @@ h3 {
 .top-div {
     display:grid;
     font-family: 'Thasadith', sans-serif;
-    padding: 1em;
+    padding: 10em;
     text-align: center;
     color:#363E40;
     /*text-shadow:
@@ -55,7 +55,7 @@ h3 {
 }
 .content-div2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 1em;
     justify-items: stretch;

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=B612+Mono|IBM+Plex+Mono|Share+Tech+Mono|VT323&display=swap');
+/*
+font-family: 'VT323', monospace;
+font-family: 'B612 Mono', monospace;
+font-family: 'Share Tech Mono', monospace;
+font-family: 'IBM Plex Mono', monospace;
+*/
+body {
+    background: black;
+}
+
+main {
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em 0 1em 0;
+}
+
+content {
+    display: inline-block;
+    text-align: left;
+}
+
+pre {
+    font-family: 'VT323', monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.ac1 {
+    color: #52CBFF;
+}
+.ac2 {
+    color: #52CBFF;
+}
+.ac3 {
+    color: #B0E5FB;
+}
+.title {
+    display:grid;
+}
+.body-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 1em;
+    justify-items: center;
+    align-items: stretch;
+}
+.content {
+    display: inline-block;
+    text-align: left;
+}
+.ascii-art1 {
+    display: inline-block;
+    text-align: left;
+    font-size: 8px;
+    line-height: 8px;
+}
+.footer {
+    display:grid;
+}
