@@ -13,14 +13,8 @@ main {
     font-family: 'VT323', monospace;
     font-size: 22px;
     line-height: 22px;
-    text-align: center;
     margin: 0 auto;
     padding: 1em 0 1em 0;
-}
-
-content {
-    display: inline-block;
-    text-align: left;
 }
 
 pre {
@@ -31,12 +25,32 @@ a {
     text-decoration: none;
 }
 
+a:link {
+    color: #B0E5FB;
+}
+
+a:hover {
+    color: #8BB5C7;
+}
+
+a:active {
+    color: #566F7A;
+}
+
+a:visited {
+    color: #31647A;
+}
+
+p {
+    line-height: 30px;
+}
+
 h1 {
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .ac1 {
-    color: #52CBFF;
+    color: #566F7A;
 }
 .ac2 {
     color: #52CBFF;
@@ -44,27 +58,53 @@ h1 {
 .ac3 {
     color: #B0E5FB;
 }
-.title {
-    display:grid;
+.ac4 {
+    color: #31647A;
 }
-.body-content {
+.ac5 {
+    color: #8BB5C7;
+}
+
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 1em;
-    justify-items: center;
-    align-items: stretch;
+    grid-template-columns: auto auto;
+    grid-gap: 0px;
+    padding: 10px;
+    /*background: lightgray;*/
+    width: 600px;
+    justify-content: center;
+  }
+  
+  .grid-container > div {
+    font-size: 22px;
+    /*background: darkgray;*/
+  }
+  
+/* start row-line and column-line, and end on row-line and column-line */
+  
+.title {
+    grid-area: 1 / 1 / 1 / span 2;
+    text-align: center;
 }
-.content {
-    display: inline-block;
+
+.left-content {
+    grid-area: 2 / 1;
     text-align: left;
+    padding: 10px;
 }
-.ascii-art1 {
-    display: inline-block;
-    text-align: left;
+ 
+.ascii-art {
+    grid-area: 2 / 2;
+    text-align: right;
+    padding: 5px;
+}
+
+.ascii-art > pre {
     font-size: 8px;
     line-height: 8px;
 }
+
 .footer {
-    display:grid;
+    grid-area: 4 / 1 / 4 / span 2;
+    text-align: center;
 }
