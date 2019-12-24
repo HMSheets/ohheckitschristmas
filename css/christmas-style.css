@@ -2,12 +2,14 @@
 /* font-family: 'Oleo Script', cursive; */
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 /* font-family: 'Pacifico', cursive; */
+
 .wrapper {
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), transparent, transparent, rgba(255, 255, 255, 0.4));
 }
 .top-div {
     font-family: 'Pacifico', cursive;
     color: white;
+    font-size: 3.5em;
     text-shadow:
         -2px -2px 0 #000,
         2px -2px 0 #000,
@@ -19,6 +21,7 @@
 .countdown-div {
     font-family: 'Oleo Script', cursive;
     color: white;
+    font-size: 5em;
     text-shadow:
         -2px -2px 0 #000,
         2px -2px 0 #000,
@@ -30,9 +33,95 @@
 .footer-div {
     font-family: 'Pacifico', cursive;
     color: black;
-    justify-content: center;
-    align-items: flex-end;
+    font-size: 1.3em;
 }
-body {
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    padding: 0px;
+    /*background: lightgray;*/
+  }
+  
+  /*.grid-container > div {
+    background: darkgray;
+  }*/
+  
+/* start row-line and column-line, and end on row-line and column-line */
+  
+.title-grid {
+    grid-area: 1 / 1 / 1 / span 2;
+    text-align: center;
+}
+
+.background-container {
     background-image: url('../christmas/images/oh_heck_paper.png');
+}
+
+.left-content-grid {
+    grid-area: 2 / 1;
+    text-align: center;
+    align-self: center;
+}
+ 
+.right-content-grid {
+    grid-area: 2 / 2;
+    text-align: center;
+}
+
+.footer-grid {
+    grid-area: 4 / 1 / 4 / span 2;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .left-content-grid {font-size: 4em;}
+}
+
+@media only screen and (max-width: 1200px) {
+    .left-content-grid {font-size: 3.2em;}
+}
+
+@media only screen and (max-width: 800px) {
+    .title-grid {grid-area: 1 / 1 / 1 / span 2; font-size: 3.1em;}
+    .left-content-grid {grid-area: 3 / 1 / 3 / span 2; font-size: 4em;}
+    .right-content-grid {grid-area: 2 / 1 / 2 / span 2;}
+    .footer-grid {grid-area: 4 / 1 / 4 / span 2;}
+}
+
+@media only screen and (max-height: 600px) {
+    .title-grid {grid-area: 1 / 1 / 1 / span 2; font-size: 3.1em;}
+    .left-content-grid {grid-area: 2 / 1 ; font-size: 2.8em;}
+    .right-content-grid {grid-area: 2 / 2;}
+    .footer-grid {grid-area: 3 / 1 / 3 / span 2;}
+}
+
+@media only screen and (max-width: 700px) {
+    .title-grid {font-size: 2.7em;}
+    .left-content-grid {font-size: 2.8em;}
+    .footer-div {font-size: 1.2em;}
+}
+
+@media only screen and (max-width: 600px) {
+    .title-grid {font-size: 2.2em;}
+    .footer-grid {font-size: 1em;}
+}
+
+@media only screen and (max-width: 500px) {
+    .title-grid {font-size: 1.8em;}
+    .left-content-grid {font-size: 2.8em;}
+    .footer-div {font-size: .9em;}
+}
+
+@media only screen and (max-width: 450px) {
+    .title-grid {font-size: 1.6em;}
+    .footer-div {font-size: .8em;}
+}
+
+@media only screen and (max-width: 400px) {
+    .title-grid {font-size: 1.4em;}
+    .right-content-grid {align-self: center;}
+    .left-content-grid {align-self: flex-start;}
+    .footer-div {font-size: .7em;}
 }
