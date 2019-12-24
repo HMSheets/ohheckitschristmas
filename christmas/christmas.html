@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>heckin christmas countdown!</title>
+    <link rel="stylesheet" href="../css/countdown-style.css">
+    <link rel="stylesheet" href="../css/christmas-style.css">
+    <script src="../js/countdown.js" type="text/javascript"></script>
+</head>
+
+<body class="background-container">
+    <script type="text/javascript">
+        window.onload = function(){
+        // StartCountDown("timer", "12/25/2018 00:00 AM");
+	startCountDownNextInstanceOfDate(12, 25, "timer");
+        }
+    </script>
+    <div class="wrapper grid-container">
+        <div class="top-div title-grid">heckin christmas countdown!</div>
+        <div class="countdown-div left-content-grid"><timer id="timer"></timer></div>
+        <div class="right-content-grid"><img class="main-image" src="images/chitoge_christmas.png"></div>
+        <div class="footer-div footer-grid"><a href="https://ohheck.moe">ohheck.moe - </a><a href="https://github.com/HMSheets/ohheckitschristmas">GitHub</a> - <script>new Date().getFullYear() > document.write(new Date().getFullYear());</script><noscript>sad script :( No year for you!</noscript></div>
+    </div>
+</body>
+</html>

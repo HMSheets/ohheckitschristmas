@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script:400,700');
+/* font-family: 'Oleo Script', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Thasadith');
+/* font-family: 'Thasadith', sans-serif; */
+/* font-family: 'Staatliches', cursive; */
+.wrapper {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), transparent, transparent, rgba(255, 255, 255, 0.4));
+}
+.top-div {
+    font-family: 'Staatliches', cursive;
+    color: white;
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000,
+        2px 2px 200px #fff,
+        2px 2px 200px #ccc;
+}
+.countdown-div {
+    font-family: 'Staatliches', cursive;
+    color: white;
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000,
+        2px 2px 200px #fff,
+        2px 2px 200px #ccc;
+}
+.footer-div {
+    font-family: 'Staatliches', cursive;
+    color: black;
+    justify-content: center;
+    align-items: flex-end;
+}
+body {
+    background-image: url('../newyear/images/newyears2019.jpg');
+}
