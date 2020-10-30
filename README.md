@@ -1,6 +1,2 @@
-# oh heck its christmas!
-Do you need another christmas countdown web page? No? Well have another!
-
-This repo is the place to find the newest code for the [ohheckitschristmas.com](ohheckitschristmas.com) site.
-
-Screenshots to come!!
+# oh heck! visitors!
+This repo is home to ohheck.moe and all its goodies. This includes links and projects such as the ohheck countdown timers.
